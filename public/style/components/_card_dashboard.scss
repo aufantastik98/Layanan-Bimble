@@ -1,0 +1,18 @@
+.card-dashboard-jadwal {
+    margin-bottom: 10px;
+    .card-body {
+        padding: 13px;
+
+        .jadwal-title {
+            font-weight: normal;
+            font-size: 18px;
+            color: #02044d;
+        }
+
+        .jadwal-layanan {
+            font-size: 16px;
+            line-height: 24px;
+            color: #080000;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.component-layananes {
+    background: #71ec6d;
+    border-radius: 8px;
+    padding: 30px 30px 10px 30px;
+    margin-bottom: 20px;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.05);
+        text-decoration: none;
+    }
+
+    .layananes-text {
+        font-size: 18px;
+        text-align: center;
+        color: #010116;
+        font-weight: normal;
+        margin-top: 12px;
+    }
+}

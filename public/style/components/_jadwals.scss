@@ -1,0 +1,49 @@
+.component-jadwals {
+    margin-bottom: 20px;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    .jadwals-thumbnail {
+        width: 100%;
+        height: 150px;
+
+        border-radius: 8px;
+
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+
+        &:hover,
+        &:focus {
+            .jadwals-image {
+                transform: scale(1.1);
+            }
+        }
+
+        .jadwals-image {
+            width: 100%;
+            height: 100%;
+
+            background-color: rgb(247, 107, 107);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            transition: all 0.3s ease;
+        }
+    }
+    .jadwals-text {
+        font-weight: normal;
+        font-size: 18px;
+        color: #010114;
+        margin-top: 12px;
+    }
+    .jadwals-price {
+        font-weight: 500;
+        font-size: 16px;
+        color: #0c0301;
+        margin-top: 12px;
+    }
+}

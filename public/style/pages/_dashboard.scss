@@ -1,0 +1,135 @@
+.page-dashboard {
+    #page-content-wrapper {
+        background: #8d8deb;
+        min-width: 100vw;
+    }
+
+    #sidebar-wrapper {
+        margin-top: 60px;
+        min-height: 100vh;
+        margin-left: -15rem;
+        transition: margin 0.25s ease-out;
+
+        .sidebar-heading {
+            padding: 0.875rem 1.25rem;
+            font-size: 1.2rem;
+        }
+        .list-group {
+            width: 15rem;
+        }
+    }
+
+    #wrapper {
+        &.toggled {
+            #sidebar-wrapper {
+                margin-left: 0;
+            }
+        }
+    }
+
+    .navbar-store {
+        margin-top: 0;
+        background-color: #73b463;
+        box-shadow: 0px 4px 5px #b9df73;
+        @include media-breakpoint-up(md) {
+            background-color: transparent;
+            box-shadow: none;
+        }
+    }
+
+    .list-group-item {
+        border: 0;
+        font-size: 16px;
+        color: #81dd4c;
+
+        &.active {
+            background: linear-gradient(
+                270deg,
+                rgba(115, 243, 89, 0.32) 2%,
+                rgba(9, 219, 62, 0) 100%
+            );
+            border-right: 4px solid #e7e424;
+            color: #000111;
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        #sidebar-wrapper {
+            margin-left: 0;
+            margin-top: 0px;
+        }
+
+        #page-content-wrapper {
+            min-width: 0;
+            width: 100%;
+        }
+
+        #wrapper {
+            &.toggled {
+                #sidebar-wrapper {
+                    margin-left: -15rem;
+                }
+            }
+        }
+    }
+
+    .section-content {
+        margin-top: 100px;
+
+        @include media-breakpoint-up(md) {
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+        .dashboard-title {
+            font-weight: normal;
+            font-size: 24px;
+            color: #0c0d36;
+        }
+        .dashboard-subtitle {
+            font-weight: 300;
+            font-size: 16px;
+            color: #000011;
+        }
+
+        .jadwal-title {
+            font-size: 14px;
+            line-height: 25px;
+            color: #0a0000;
+        }
+        .jadwal-subtitle {
+            font-size: 18px;
+            line-height: 30px;
+            color: #0c0d36;
+            margin-bottom: 20px;
+        }
+
+        h5 {
+            font-size: 18px;
+            line-height: 27px;
+            color: #0c0d36;
+        }
+
+        .nav-pills {
+            .nav-link {
+                font-size: 18px;
+                color: #0c0ce2;
+                border-radius: 0;
+                &.active {
+                    color: #0c0d36;
+                    border-bottom: 2px solid #0c0d36;
+                    background: none;
+                }
+            }
+        }
+
+        .gallery-container {
+            .delete-gallery {
+                display: block;
+                position: absolute;
+                top: -10px;
+                right: 0;
+            }
+        }
+    }
+}
